@@ -17,6 +17,8 @@ import {
   Menu // Tambahkan Menu jika kamu menggunakannya di mobile
 } from 'lucide-react';
 
+import AccessoryManager from './components/AccessoryManager';
+
 export default function LandingPage() {
   return (
     <div className="min-h-screen bg-[#fafafa] text-slate-900">
@@ -35,7 +37,7 @@ export default function LandingPage() {
 
           <div className="hidden md:flex items-center gap-10 text-sm font-semibold text-slate-600">
             <a href="#" className="hover:text-pink-500 transition-colors">Beranda</a>
-            <a href="#" className="hover:text-pink-500 transition-colors">Aksesoris</a>
+            <a href="#daftar-aksesoris" className="hover:text-pink-500 transition-colors">Aksesoris</a>
             <a href="#" className="hover:text-pink-500 transition-colors">Pemesanan</a>
           </div>
 
@@ -133,6 +135,9 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
+
+      {/* --- LIST AKSESORIS (Fitur Tambah Produk) --- */}
+      <AccessoryManager />
 
       {/* --- FOOTER CTA --- */}
       <footer className="pb-20 px-6">
